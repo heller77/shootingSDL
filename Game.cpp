@@ -35,7 +35,6 @@ void Game::RunLoop()
 {
     while (mIsRunning)
     {
-
         ProcessInput();
         UpdateGame();
         GenerateOutput();
@@ -43,20 +42,14 @@ void Game::RunLoop()
 }
 void Game::ProcessInput()
 {
-
-    // const Uint8 *keyState = SDL_GetKeyboardState(NULL);
-    // if (keyState[SDL_SCANCODE_ESCAPE])
-    // {
-    //     mIsRunning = false;
-    // }
+    SDL_Event event;
+    SDL_PollEvent(&event);
 }
 void Game::UpdateGame()
 {
 }
 void Game::GenerateOutput()
 {
-    // SDL_SetRenderDrawColor(mRenderer, 220, 220, 220, 255);
-    // SDL_RenderClear(mRenderer);
 }
 void Game::Shutdown()
 {
