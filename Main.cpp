@@ -10,8 +10,7 @@ int main(int argc, char **argv)
     {
 
         game.RunLoop();
-        SDL_Log("a");
-    }
+        }
     game.Shutdown();
     return 0;
 }

@@ -31,6 +31,7 @@ void Game::RunLoop()
 {
     while (mIsRunning)
     {
+        SDL_Log("a");
         ProcessInput();
         UpdateGame();
         GenerateOutput();
