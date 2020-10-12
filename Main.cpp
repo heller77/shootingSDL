@@ -8,9 +8,8 @@ int main(int argc, char **argv)
 
     if (success)
     {
-
         game.RunLoop();
-        }
+    }
     game.Shutdown();
     return 0;
 }
