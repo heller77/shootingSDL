@@ -9,12 +9,13 @@ public:
 
     bool Initialize();
     void RunLoop();
-    void ProcessInput();
-    void UpdateGame();
-    void GenerateOutput();
+
     void Shutdown();
 
 private:
+    void ProcessInput();
+    void UpdateGame();
+    void GenerateOutput();
     SDL_Window *mWindow;
     SDL_Renderer *mRenderer;
     bool mIsRunning;
