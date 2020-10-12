@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "/Library/Frameworks/SDL2_image.framework",
+                "/usr/local/include/SDL2",
+                "/usr/local/Cellar/sdl_image/1.2.12_7/include/SDL",
+                "/usr/local/Cellar/sdl_ttf/2.0.11_1/include/SDL",
+                "/usr/local/Cellar/sdl_mixer/1.2.12_3/include/SDL"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}
