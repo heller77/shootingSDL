@@ -43,7 +43,21 @@ void Game::RunLoop()
 void Game::ProcessInput()
 {
     SDL_Event event;
-    SDL_PollEvent(&event);
+    while (SDL_PollEvent(&event))
+    {
+        switch (event.type)
+        {
+        case SDL_QUIT:
+            mIsRunning = false;
+            break;
+        }
+    }
+
+    const Uint8 *state = SDL_GetKeyboardState(NULL);
+    if (state[SDL_SCANCODE_ESCAPE])
+    {
+        mIsRunning = false;
+    }
 }
 void Game::UpdateGame()
 {
