@@ -12,6 +12,9 @@ public:
 
     void Shutdown();
 
+    void AddActor(class Actor *actor);
+    void RemoveActor(class Actor *actor);
+
 private:
     void ProcessInput();
     void UpdateGame();
@@ -19,4 +22,9 @@ private:
     SDL_Window *mWindow;
     SDL_Renderer *mRenderer;
     bool mIsRunning;
+
+    //actorの配列
+    std::vector<class Actpr *> mActors;
+    //待機actorの配列
+    std::vector<class Acror *> mPendingActors;
 };

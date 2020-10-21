@@ -4,14 +4,21 @@
 class Actor
 {
 public:
-    Actor();
+    Actor(class Game *game);
     virtual ~Actor();
 
     void Update(float deltaTime);
 
-    Vector2 GetPosition() const { return position; }
-    Vector2 SetPosition(const Vector2 &pos) { position = pos; }
+    void UpdateComponent(float deltaTime);
+
+    Vector2 GetPosition() const { return mPosition; }
+    Vector2 SetPosition(const Vector2 &pos) { mPosition = pos; }
+    void AddComponent(class Component *component);
+    void RemoveComponent(class Component *component);
 
 private:
-    Vector2 position;
+    Vector2 mPosition;
+
+    std::vector<class Component *> mComponents;
+    class Game *mGame;
 };
