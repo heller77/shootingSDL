@@ -30,6 +30,9 @@ void Actor::UpdateComponent(float deltaTime)
     }
 }
 
-void Actor::AddComponent(Component &component)
+void Actor::AddComponent(Component *component)
+{
+}
+void Actor::RemoveComponent(Component *component)
 {
 }

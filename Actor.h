@@ -12,7 +12,7 @@ public:
     void UpdateComponent(float deltaTime);
 
     Vector2 GetPosition() const { return mPosition; }
-    Vector2 SetPosition(const Vector2 &pos) { mPosition = pos; }
+    void SetPosition(const Vector2 &pos) { mPosition = pos; }
     void AddComponent(class Component *component);
     void RemoveComponent(class Component *component);
 
